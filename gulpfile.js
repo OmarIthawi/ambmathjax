@@ -17,6 +17,13 @@ gulp.task('bs-reload', function () {
 });
 
 
+gulp.task('bs-stream-css', function () {
+  return gulp.src('/code/public/*.css')
+    .pipe(browserSync.stream());
+});
+
+
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch('/code/public/**/*.{js,css,html}', ['bs-reload']);
+  gulp.watch('/code/public/*.{js,html}', ['bs-reload']);
+  gulp.watch('/code/public/*.css', ['bs-stream-css']);
 });

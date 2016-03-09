@@ -1,0 +1,90 @@
+body {
+    max-width: 1170px;
+    margin: 30px auto;
+}
+
+.math {
+    margin-top: 20px;
+}
+
+munderover {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+}
+
+msig,
+minf,
+.meq,
+mrow,
+mi,
+mo,
+mn,
+msup,
+mrow,
+mfrac,
+msqrt,
+msqrtc,
+left,
+right,
+msubpad {
+    background: no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+msig {
+    flex: 8;
+    background-image: url('/imgfont/Size2/Regular/476/2211.png');
+    border: 0 solid wheat;
+}
+
+mrow {
+    flex: 1.5;
+    text-align: center;
+}
+
+munderover > :first-child, munderover > :last-child {
+    font-size: 1.1em;
+    flex: 1.5;
+}
+
+.meq {
+    height: 0.35em;
+    margin-bottom: 0.15em
+}
+
+minf {
+    margin: 0.5em;
+    background-image: url('/imgfont/Main/Regular/476/221E.png');
+}
+
+.sig > .under {
+
+}
+
+msup {
+    display: flex;
+    flex-direction: column;
+}
+
+msup > :first-child {
+    flex: 1;
+}
+
+msup > right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+msup > right > :first-child {
+    flex: 1;
+}
+
+msup > right > :last-child {
+    flex: 2;
+}
+
