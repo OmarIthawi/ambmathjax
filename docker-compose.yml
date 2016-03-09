@@ -1,0 +1,13 @@
+main:
+  image: node:0.12.9
+
+  working_dir: /code/
+  environment:
+    PORT: "80"
+  command: node node_modules/.bin/gulp
+
+  ports:
+    - "80:80"
+
+  volumes:
+    - ".:/code/"

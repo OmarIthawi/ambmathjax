@@ -1,0 +1,23 @@
+{
+  "name": "ambmathjax",
+  "version": "1.0.0",
+  "description": "Ambitious MathJax test project.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OmarIthawi/ambmathjax.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.6.5",
+    "gulp": "^3.8.11"
+  },
+  "author": "Omar Al-Ithawi <i@omardo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Edraak/ambmathjax/issues"
+  },
+  "homepage": "https://github.com/Edraak/ambmathjax"
+}
